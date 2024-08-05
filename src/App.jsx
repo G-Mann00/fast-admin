@@ -20,7 +20,7 @@ const App = () => {
 
       {/* Enrutamiento al Dashboard y sus rutas anidadas   */}
       <Route path="/dashboard" element={<MainLayout />}>
-        <Route index element={<Home />} />
+        <Route path="/dashboard/inicio" element={<Home />} />
         <Route path="/dashboard/kioskos" element={<Kioskos />} />
         <Route path="/dashboard/usuarios" element={<Usuarios />} />
       </Route>
